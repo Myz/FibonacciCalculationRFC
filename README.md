@@ -14,16 +14,11 @@ Implement the sequence generator for the famous mathematical fibonacci sequence.
 ## A) Satisfy the existing test
 Find the empty function in `src/calculation/FibonacciCalculation.cpp` and make the test in `test/FibonacciCalculationTest.cpp` pass. Before you can start compiling and testing you will need to create a `build/` once and cd there. Then you will need to generate the Makefiles by running `cmake ..`. Now you can compile everything by running `make`. Then you can execute the tests with `test/test-calculator`. Hint: Use your shell to combine both commands so you compile and, if successful, run the tests immediately.
 
-## B) Create a FibonacciCalculatorServer service
-This server should be able to respond back with the n'th fibonacci number whenever it is asked by a another process/client. It should be able to handle multiple simultaneous requests asynchronously and must use the FibonacciCalculation library.
+## B) Create a FibonacciCalculatorHTTPServer web service
+This server should be able to respond back with the n'th fibonacci number whenever it is requested. It should be able to handle multiple simultaneous requests asynchronously and must use the FibonacciCalculation library which contains your implementation.
 
-Use one of the following IPC method that suits you best:
+For implementing the HTTP web server use the [boost::asio](https://www.boost.org/doc/libs/1_66_0/doc/html/boost_asio.html) library.
 
-- sockets (preferred)
-  - either raw sockets
-  - or abstracted with [boost::asio](https://www.boost.org/doc/libs/1_66_0/doc/html/boost_asio.html) for example
-- shared memory
-- pipes
-- filesystem (not recommended)
+The new component must be integrated into the existing cmake build configuration.
 
-## C) Discuss you solution with the team
+## C) Discuss your solution with the team
