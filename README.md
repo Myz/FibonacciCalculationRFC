@@ -10,9 +10,16 @@ Implement the sequence generator for the famous mathematical fibonacci sequence.
 - binutils
 - c++ compiler
 
+# Compiling
+
+1. Create a `build/`
+1. Go into this folder `cd build`
+1. Run `cmake ..`
+1. Now you could compile it by running `make`
+
 # Tasks
 ## A) Satisfy the existing test
-Find the empty function in `src/calculation/FibonacciCalculation.cpp` and make the test in `test/FibonacciCalculationTest.cpp` pass. Before you can start compiling and testing you will need to create a `build/` once and cd there. Then you will need to generate the Makefiles by running `cmake ..`. Now you can compile everything by running `make`. Then you can execute the tests with `test/test-calculator`. Hint: Use your shell to combine both commands so you compile and, if successful, run the tests immediately.
+Find the empty function in `src/calculation/FibonacciCalculation.cpp` and make the test in `test/FibonacciCalculationTest.cpp` pass. Then you can execute the tests with `test/test-calculator`. Hint: Use your shell to combine both commands so you compile and, if successful, run the tests immediately.
 
 ## B) Create a FibonacciCalculatorHTTPServer web service
 This server should be able to respond back with the n'th fibonacci number whenever it is requested. It should be able to handle multiple simultaneous requests asynchronously and must use the FibonacciCalculation library which contains your implementation.
