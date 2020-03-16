@@ -9,7 +9,7 @@ Implement the sequence generator for the famous mathematical fibonacci sequence.
 - make
 - binutils
 - c++ compiler
-- nice to hace clang-format (version 9.0)
+- nice to have clang-format (version 9.0)
 
 # Compiling
 
