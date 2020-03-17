@@ -13,7 +13,7 @@ Implement the sequence generator for the famous mathematical fibonacci sequence.
 
 # Compiling
 
-1. Create a `build/`
+1. Create a `mkdir build`
 1. Go into this folder `cd build`
 1. Run `cmake ..`
 1. Now you could compile it by running `make`
